@@ -175,6 +175,17 @@ unName.onchange = () => {
         imgBack.classList.remove('hidden');
         nationalityId.classList.remove('hidden');
 
+    } else if (unName.value != "جامعة المنصورة" && unName.value != "أخري" && unName.value != "الجامعة") {
+        unNameInput.classList.add('hidden');
+        unNameInput.value = unName.value;
+        nationaltynumber.value = "";
+        nationaltyIdFrontImgFront.value = "";
+        nationaltyIdFrontImgBack.value = "";
+
+        imgFront.classList.remove('hidden');
+        imgBack.classList.remove('hidden');
+        nationalityId.classList.remove('hidden');
+
     } else if (unName.value == "الجامعة") {
         unNameInput.value = "";
         unNameInput.classList.add('hidden');
@@ -417,6 +428,29 @@ nationaltyIdFrontImgBack.oninput = () => {
 
 
 // End Validation form
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
